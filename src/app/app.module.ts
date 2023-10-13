@@ -13,7 +13,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HospitalDetailComponent } from './hospital-detail/hospital-detail.component';
 import { HospitalsComponent } from './hospitals/hospitals.component';
 import { HospitalSearchComponent } from './hospital-search/hospital-search.component';
-import { AddressPipe } from './address.pipe';
 
 @NgModule({
   imports: [
@@ -35,7 +34,6 @@ import { AddressPipe } from './address.pipe';
     HospitalsComponent,
     HospitalDetailComponent,
     HospitalSearchComponent,
-    AddressPipe
   ],
   bootstrap: [ AppComponent ]
 })
