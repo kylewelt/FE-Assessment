@@ -1,6 +1,13 @@
-# AMA - FE Assessment
+# FE Assessment
 
-Welcome to the AMA FE Engineer coding challenge.
+We greatly value the time that you put into these assignments. The technical part of your next interview will build upon your submission.
+
+This evaluation is intended to allow you to demonstrate practical Angular coding skills, including how you structure your solution. We value clean code that is easy to understand and extend. We also value test coverage where appropriate (Note: you should not try to cover the entire application with tests as part of this assessment).
+
+When you have completed the challenge, please send an email to your recruiter with the link to your fork of the repository containing the completed assessment. They will ensure that it makes it back to us.
+
+
+# Overview
 
 In this challenge, you will be asked to update, refactor, or extend functionality in this application. This application manages a list of hospitals, their addresses, and their rating. There are 3 pages, a dashboard, a list/form (Hospitals), and a details view.
 
@@ -8,7 +15,10 @@ Instructions for each task can be found in this readme. Please use best practice
 
 This challenge should take around an hour or so to complete, so please timebox your efforts. There is a bonus/extra task that you can complete if you have time or would like to.
 
+
 # Startup
+
+Fork the repo found here: https://github.com/AMADataLabs/FE-Assessment
 Install the dependencies using `npm i`
 If needed, install the Angular CLI `npm i -g @angular/cli`
 
@@ -32,5 +42,6 @@ In the hospital component, update the page to include address and rating input f
 In the Dashboard component, update the "Top Hospitals" list to display the icon, name, address, and rating for each of the top hospitals.
 
 
-# Bonus
+# Bonus Items
+Add validation to the "Add Hospital" form to require a valid name and rating.
 Update the rating system to display stars instead of numbers.
