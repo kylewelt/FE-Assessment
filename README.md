@@ -8,6 +8,10 @@ Instructions for each task can be found in this readme. Please use best practice
 
 This challenge shouldn't take more than an hour or so to complete, so please timebox your efforts. There are a couple bonus/extra tasks that you can complete if you have time.
 
+# Startup
+Install the dependencies using `npm i`
+If needed, install the Angular CLI `npm i -g @angular/cli`
+
 
 # Task 1
 
