@@ -14,7 +14,6 @@
   <label for="new-hospital">Hospital name: </label>
   <input id="new-hospital" #hospitalName />
 
-  <!-- (click) passes input value to add() and then clears the input -->
   <button type="button" class="add-button" (click)="add(hospitalName.value); hospitalName.value=''">
     Add hospital
   </button>
