@@ -19,7 +19,7 @@ export class InMemoryDataService implements InMemoryDbService {
               zipCode: '60606'
           },
           rating: 5,
-          icon: '../assets/HospitalA.png'
+          icon: '../../assets/HospitalA.png'
       },{
           id: 2,
           name: 'Hospital B',
@@ -31,7 +31,7 @@ export class InMemoryDataService implements InMemoryDbService {
               zipCode: '60606'
           },
           rating: 1,
-          icon: '../assets/HospitalB.png'
+          icon: '../../assets/HospitalB.png'
       },{
           id: 3,
           name: 'Hospital C',
@@ -43,7 +43,7 @@ export class InMemoryDataService implements InMemoryDbService {
               zipCode: '60606'
           },
           rating: 4,
-          icon: '../assets/HospitalC.png'
+          icon: '../../assets/HospitalC.png'
       },{
           id: 4,
           name: 'Hospital D',
@@ -55,7 +55,7 @@ export class InMemoryDataService implements InMemoryDbService {
               zipCode: '60606'
           },
           rating: 3,
-          icon: '../assets/HospitalD.png'
+          icon: '../../assets/HospitalD.png'
       }
     ];
     return {hospitals};

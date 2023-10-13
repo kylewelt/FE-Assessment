@@ -6,7 +6,7 @@ In this challenge, you will be asked to update, refactor, or extend functionalit
 
 Instructions for each task can be found in this readme. Please use best practices when solving these tasks.
 
-This challenge shouldn't take more than an hour or so to complete, so please timebox your efforts. There are a couple bonus/extra tasks that you can complete if you have time.
+This challenge should take around an hour or so to complete, so please timebox your efforts. There is a bonus/extra task that you can complete if you have time or would like to.
 
 # Startup
 Install the dependencies using `npm i`
