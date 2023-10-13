@@ -1,0 +1,21 @@
+<h2>My Hospitals</h2>
+
+<div>
+  <label for="new-hospital">Hospital name: </label>
+  <input id="new-hospital" #hospitalName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="add(hospitalName.value); hospitalName.value=''">
+    Add hospital
+  </button>
+</div>
+
+<ul class="hospitals">
+  <li *ngFor="let hospital of hospitals">
+    <a routerLink="/detail/{{hospital.id}}">
+      <span class="badge">{{hospital.id}}</span> {{hospital.name}}
+    </a>
+    <button type="button" class="delete" title="delete hospital"
+      (click)="delete(hospital)">x</button>
+  </li>
+</ul>
