@@ -25,7 +25,7 @@ If needed, install the Angular CLI `npm i -g @angular/cli`
 
 # Task 1
 
-In the Dashboard component, update the "Top Hospitals" list to sort the displayed hospitals in order of their rating (5 is high, 1 is low).
+In the Dashboard component, update the "Top Hospitals" list to sort the displayed hospitals in order of their rating (5 is high, 1 is low). The list should show the top 3 hospitals ranked from highest on the left, to lowest on the right.
 
 
 # Task 2
