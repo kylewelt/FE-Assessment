@@ -10,6 +10,7 @@ import { HospitalService } from '../hospital.service';
 })
 export class HospitalsComponent implements OnInit {
   hospitals: Hospital[] = [];
+  hospitalName = '';
 
   constructor(private hospitalService: HospitalService) { }
 
@@ -22,13 +23,15 @@ export class HospitalsComponent implements OnInit {
       .subscribe(hospitals => this.hospitals = hospitals);
   }
 
-  add(name: string): void {
-    name = name.trim();
+  addHospital(): void {
+    const name = this.hospitalName.trim();
     if (!name) { return; }
     this.hospitalService.addHospital({ name } as Hospital)
       .subscribe(hospital => {
         this.hospitals.push(hospital);
       });
+
+      this.hospitalName = '';
   }
 
   delete(hospital: Hospital): void {

@@ -12,9 +12,9 @@
 
 <div>
   <label for="new-hospital">Hospital name: </label>
-  <input id="new-hospital" #hospitalName />
+  <input [(ngModel)]="hospitalName" />
 
-  <button type="button" class="add-button" (click)="add(hospitalName.value); hospitalName.value=''">
+  <button type="button" class="add-button" (click)="addHospital()">
     Add hospital
   </button>
 </div>
