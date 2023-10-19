@@ -8,7 +8,12 @@
         <span>Name: </span>{{hospital.name}}
     </div>
     <div>
-        <span>Address: </span>{{hospital.address}}
+        <span>Address: </span>
+        <span>{{hospital.address.line1}}, </span>
+        <span *ngIf="hospital.address.line2">{{hospital.address.line2}}, </span>
+        <span>{{hospital.address.city}}, </span>
+        <span>{{hospital.address.state}} </span>
+        <span>{{hospital.address.zipCode}}</span>
     </div>
     <div>
         <label for="rating">Rating: </label>
