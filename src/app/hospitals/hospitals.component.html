@@ -33,8 +33,8 @@
     <label for="new-hospital-address-zip-code">Hospital address zip code (5 digit): </label>
     <input type="text" id="new-hospital-address-zip-code" name="new-hospital-address-zip-code" pattern="[0-9]{5}" required [(ngModel)]="hospitalAddressZipCode" />
 
-    <label for="new-hospital-rating">Hospital rating (0-5): </label>
-    <input type="number" id="new-hospital-rating" name="new-hospital-rating" required min="0" max="5" [(ngModel)]="hospitalRating" />
+    <label for="new-hospital-rating">Hospital rating (1-5): </label>
+    <input type="number" id="new-hospital-rating" name="new-hospital-rating" required min="1" max="5" [(ngModel)]="hospitalRating" />
 
     <button type="submit" class="add-button">
       Add hospital

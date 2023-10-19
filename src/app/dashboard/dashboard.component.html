@@ -2,7 +2,19 @@
 <div class="hospitals-menu">
   <a *ngFor="let hospital of hospitals"
       routerLink="/detail/{{hospital.id}}">
-      {{hospital.name}}
+      <div *ngIf="hospital.icon">
+        <img src="{{hospital.icon}}" />
+      </div>
+      <div>{{hospital.name}}</div>
+      <div>{{hospital.address.line1}}, </div>
+      <div *ngIf="hospital.address.line2">{{hospital.address.line2}}, </div>
+      <div>{{hospital.address.city}}, </div>
+      <div>{{hospital.address.state}} </div>
+      <div>{{hospital.address.zipCode}}</div>
+      <div *ngIf="hospital.rating; else noRating">
+        <img *ngFor="let _ of [].constructor(hospital.rating)" src="../../assets/star.png" />
+      </div>
+      <ng-template #noRating><i>No rating.</i></ng-template>
   </a>
 </div>
 

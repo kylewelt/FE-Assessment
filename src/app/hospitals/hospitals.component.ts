@@ -18,7 +18,7 @@ export class HospitalsComponent implements OnInit {
   hospitalAddressCity = '';
   hospitalAddressState = undefined;
   hospitalAddressZipCode = '';
-  hospitalRating = 0;
+  hospitalRating = 1;
 
   states = stateList;
 
@@ -59,7 +59,7 @@ export class HospitalsComponent implements OnInit {
     if (!addressZipCode || !/[0-9]{5}/.test(addressZipCode)) { return; }
 
     // check for valid hospital rating
-    if (isNaN(rating) || rating < 0 || rating > 5) { return; }
+    if (isNaN(rating) || rating < 1 || rating > 5) { return; }
 
     const newHospital = {
       name,
