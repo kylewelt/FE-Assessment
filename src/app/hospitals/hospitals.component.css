@@ -6,7 +6,7 @@
   width: 15em;
 }
 
-input {
+input, select {
   display: block;
   width: 100%;
   padding: .5rem;
@@ -87,4 +87,8 @@ button.delete {
 button.delete:hover {
   background-color: #525252;
   color: white;
+}
+
+.ng-dirty.ng-invalid:not(form), form.ng-submitted .ng-invalid:not(form) {
+  border-color: red;
 }

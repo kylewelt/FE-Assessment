@@ -11,10 +11,33 @@
 </ul>
 
 <div>
-  <label for="new-hospital">Hospital name: </label>
-  <input [(ngModel)]="hospitalName" />
+  <form (ngSubmit)="addHospital(hospitalForm)" #hospitalForm="ngForm">
+    <label for="new-hospital-name">Hospital name: </label>
+    <input type="text" id="new-hospital-name" name="new-hospital-name" required [(ngModel)]="hospitalName"/>
 
-  <button type="button" class="add-button" (click)="addHospital()">
-    Add hospital
-  </button>
+    <label for="new-hospital-address-line-1">Hospital address line 1: </label>
+    <input type="text" id="new-hospital-address-line-1" name="new-hospital-address-line-1" required [(ngModel)]="hospitalAddressLine1" />
+
+    <label for="new-hospital-address-line-2">Hospital address line 2: </label>
+    <input  type="text" id ="new-hospital-address-line-2" name ="new-hospital-address-line-2" [(ngModel)]="hospitalAddressLine2" />
+
+    <label for="new-hospital-address-city">Hospital address city: </label>
+    <input  type="text" id="new-hospital-address-city" name="new-hospital-address-city" required [(ngModel)]="hospitalAddressCity" />
+
+    <label for="new-hospital-address-state">Hospital address state: </label>
+    <select class="input" id="new-hospital-address-state" name="new-hospital-address-state" required [(ngModel)]="hospitalAddressState">
+      <option value=undefined>Select a state</option>
+      <option *ngFor="let state of states" [value]="state.name">{{state.name}}</option>
+    </select>
+
+    <label for="new-hospital-address-zip-code">Hospital address zip code (5 digit): </label>
+    <input type="text" id="new-hospital-address-zip-code" name="new-hospital-address-zip-code" pattern="[0-9]{5}" required [(ngModel)]="hospitalAddressZipCode" />
+
+    <label for="new-hospital-rating">Hospital rating (0-5): </label>
+    <input type="number" id="new-hospital-rating" name="new-hospital-rating" required min="0" max="5" [(ngModel)]="hospitalRating" />
+
+    <button type="submit" class="add-button">
+      Add hospital
+    </button>
+  </form>
 </div>
